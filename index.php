@@ -1,9 +1,9 @@
-<html>
-
-<head>
-<title>Exemplo PHP</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Supermercado - Exemplo PHP</title>
+	</head>
+	<body>
 
 <?php
 ini_set("display_errors", 1);
@@ -13,10 +13,10 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "54.234.153.24";
-$username = "root";
-$password = "Senha123";
-$database = "meubanco";
+$servername = "10.0.2.100";
+$username = "teste";
+$password = "teste@2022";
+$database = "supermercado";
 
 // Criar conexão
 
@@ -34,7 +34,7 @@ $valor_rand2 = strtoupper(substr(bin2hex(random_bytes(4)), 1));
 $host_name = gethostname();
 
 
-$query = "INSERT INTO dados (AlunoID, Nome, Sobrenome, Endereco, Cidade, Host) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2', '$valor_rand2','$host_name')";
+$query = "INSERT INTO clientes (ClienteID, Nome, Sobrenome, Endereco, Cidade, Clube) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2', '$valor_rand2','$host_name')";
 
 
 if ($link->query($query) === TRUE) {
@@ -44,5 +44,5 @@ if ($link->query($query) === TRUE) {
 }
 
 ?>
-</body>
+	</body>
 </html>
