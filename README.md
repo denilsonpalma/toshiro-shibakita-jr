@@ -1,3 +1,8 @@
+#Docker: Utilização prática no cenário de Microserviços#
+Teste realizado em ambiente virtual local, simulando os serviços AWS.
+Usado como base o Ubuntu Server 20.04 LTS.
+Original:
+
 Docker: Utilização prática no cenário de Microsserviços
 Denilson Bonatti, Instrutor - Digital Innovation One
 
